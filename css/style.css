@@ -1,0 +1,68 @@
+
+   
+   
+   :root {
+        --white: #f9faff;           
+        --platinum: #e3e4e8;        
+        --windsurfing: #32779b;     
+        --marina: #5a91c7;          
+        --gray: #9a9a9a;            
+        --onyx: #3c3d44;            
+        --charcoal: #343c47;        
+        --corners: 24px 0;          
+        --base-font-size: 1rem;     
+      }
+
+      /*Set the box size to border-box for layouts*/
+html{
+box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+
+}
+
+/*Basic page set to our font size and font family.*/
+
+body {
+    font-size: var(--base-font-size);
+    font-family: "Inter", sans-serif;
+    background-color: var(--platinum);
+    color:var(--onyx);
+
+}
+
+h1{
+    margin:0;
+    font-size: calc(var(--base-font-size) * 2.9);
+}
+
+h2{
+    margin: 0;
+    font-size: var(--base-font-size);
+    text-transform: uppercase;
+    color: var(--windsurfing);
+    letter-spacing: 0.25em;
+}
+
+h3{
+    margin: 0;
+}
+
+P {
+    line-height: 1.5;
+}
+
+a{
+    color:var(--windsurfing)
+}
+
+a:hover{
+    color: var(--marina);
+}
+
+img{
+    max-width: 100%;
+    border-radius: var(--corners);
+}
